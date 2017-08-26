@@ -80,6 +80,9 @@ else
 if [ $menuoption = "4" ]; then
 read -p " Enter your target {google.com} : " target
 echo ""
+echo "Your interfaces:"$BLUE
+ls /sys/class/net/
+echo ""
 echo $STAND"Please type the name of your network interface Example: eth0 "
 read IFACE;
 echo ""
