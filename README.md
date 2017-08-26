@@ -7,7 +7,7 @@ Auto Enumeration Script
            
 - Run the script: </br>
 
-          cd Gh0st/opt && ./ghost.sh
+           cd Gh0st/opt && ./ghost.sh
 
 ## demo
 
