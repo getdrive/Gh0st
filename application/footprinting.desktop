@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Gh0st
+Encoding=UTF-8
+Exec=sh -c "/opt/ghost.sh;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-04-network-exploitation;top10;
+X-Kali-Package=Gh0st
