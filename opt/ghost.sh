@@ -97,7 +97,7 @@ else
 if [ $menuoption = "5" ]; then
 read -p " Enter your target {google.com} : " target
 echo ""
-fierce -dns $target
+fierce --domain $target
 echo ""
 read -p " Please press enter to return to the menu "
 cd $defaultpath
