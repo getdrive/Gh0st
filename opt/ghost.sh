@@ -197,7 +197,7 @@ whatweb -v $target
 echo ""
 echo ""
 cd /root
-theharvester -d $target -l 500 -b google
+sudo theHarvester -d $target -l 500 -b google
 echo ""
 echo ""
 cd /root
