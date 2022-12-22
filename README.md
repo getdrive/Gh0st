@@ -3,7 +3,7 @@ Auto Enumeration Script
 
 - Install: </br>
 
-           git clone https://github.com/getdrive/Gh0st
+           git clone https://github.com/getdrive/gh0st
            
 - Install dependences: </br>
 
