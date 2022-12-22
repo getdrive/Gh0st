@@ -4,10 +4,13 @@ Auto Enumeration Script
 - Install: </br>
 
            git clone https://github.com/getdrive/Gh0st
+      
+- Install dependences: </br>
+           chmod +x install; bash install
            
 - Run the script: </br>
 
-          ./ghost.sh
+          bash ghost.sh
 
 ## D3m0 v1d90
 
