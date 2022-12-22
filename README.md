@@ -7,11 +7,11 @@ Auto Enumeration Script
            
 - Install dependences: </br>
 
-          bash install
+          chmod +x install; bash install
            
 - Run the script: </br>
 
-          bash ghost.sh
+          chmod + ghost.sh; bash ghost.sh
 
 ## D3m0 v1d90
 
