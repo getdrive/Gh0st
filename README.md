@@ -11,7 +11,7 @@ Auto Enumeration Script
            
 - Run the script: </br>
 
-          chmod + ghost.sh; bash ghost.sh
+          chmod +x ghost.sh; bash ghost.sh
 
 ## D3m0 v1d90
 
