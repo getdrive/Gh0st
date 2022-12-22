@@ -1,0 +1,162 @@
+#!/bin/bash
+
+checkdepend ()
+{
+depend=$(dpkg -s dnsmap  | grep 'Status' | awk -F':' '/Status: / {print $2}')
+	if [ "$depend" = " install ok installed" ]; then
+		clear 
+			
+			else
+			echo -e "$aquamarine"
+#clear
+		echo    "Требующийся пакет DNSMAP не установлен. I'll try to fix it)"
+               
+			sudo apt-get update -y; sudo apt install dnsmap -y
+	
+fi
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+checkdepend_1 ()
+{
+depend=$(dpkg -s fierce  | grep 'Status' | awk -F':' '/Status: / {print $2}')
+	if [ "$depend" = " install ok installed" ]; then
+		clear 
+			
+			else
+			echo -e "$aquamarine"
+#clear
+		echo    "Требующийся пакет FIERCE не установлен. I'll try to fix it)"
+               
+			sudo apt-get update -y; sudo apt install fierce -y
+	
+fi
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+checkdepend_2 ()
+{
+depend=$(dpkg -s theharvester  | grep 'Status' | awk -F':' '/Status: / {print $2}')
+	if [ "$depend" = " install ok installed" ]; then
+		clear 
+			
+			else
+			echo -e "$aquamarine"
+#clear
+		echo    "Требующийся пакет THEHARVESTER не установлен. I'll try to fix it)"
+               
+			sudo apt-get update -y; sudo apt install theharvester -y
+	
+fi
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+checkdepend_3 ()
+{
+depend=$(dpkg -s nmap  | grep 'Status' | awk -F':' '/Status: / {print $2}')
+	if [ "$depend" = " install ok installed" ]; then
+		clear 
+			
+			else
+			echo -e "$aquamarine"
+#clear
+		echo    "Требующийся пакет NMAP не установлен. I'll try to fix it)"
+               
+			sudo apt-get update -y; sudo apt install nmap -y
+	
+fi
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+checkdepend_4 ()
+{
+depend=$(dpkg -s amap  | grep 'Status' | awk -F':' '/Status: / {print $2}')
+	if [ "$depend" = " install ok installed" ]; then
+		clear 
+			
+			else
+			echo -e "$aquamarine"
+#clear
+		echo    "Требующийся пакет AMAP не установлен. I'll try to fix it)"
+               
+			sudo apt-get update -y; sudo apt install amap -y
+	
+fi
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+checkdepend_5 ()
+{
+depend=$(dpkg -s dnsenum  | grep 'Status' | awk -F':' '/Status: / {print $2}')
+	if [ "$depend" = " install ok installed" ]; then
+		clear 
+			
+			else
+			echo -e "$aquamarine"
+#clear
+		echo    "Требующийся пакет DNSENUM не установлен. I'll try to fix it)"
+               
+			sudo apt-get update -y; sudo apt install dnsenum -y
+	
+fi
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+checkdepend_6 ()
+{
+depend=$(dpkg -s wafw00f  | grep 'Status' | awk -F':' '/Status: / {print $2}')
+	if [ "$depend" = " install ok installed" ]; then
+		clear 
+			
+			else
+			echo -e "$aquamarine"
+#clear
+		echo    "Требующийся пакет WAFW00F не установлен. I'll try to fix it)"
+               
+			sudo apt-get update -y; sudo apt install wafw00f -y
+	
+fi
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+checkdepend_7 ()
+{
+depend=$(dpkg -s dnstracer  | grep 'Status' | awk -F':' '/Status: / {print $2}')
+	if [ "$depend" = " install ok installed" ]; then
+		clear 
+			
+			else
+			echo -e "$aquamarine"
+#clear
+		echo    "Требующийся пакет DNSTRACER не установлен. I'll try to fix it)"
+               
+			sudo apt-get update -y; sudo apt install dnstracer -y
+	
+fi
+
+}
+/////////////////////////////////////////////////////////////////////////////////////
+checkdepend
+checkdepend_1
+checkdepend_2
+checkdepend_3
+checkdepend_4
+checkdepend_5
+checkdepend_6
+checkdepend_7
+
+sudo apt install php*-curl -y
+
+chmod +x $PWD/opt/tools/*pl $PWD/opt/tools/*py $PWD/opt/tools/*sh $PWD/opt/tools/*php $PWD/opt/tools/httprint
+clear
+echo "Now you can run ./ghost!"
+exit;
